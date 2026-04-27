@@ -5,6 +5,7 @@
 
 import React, { useEffect, useState, useRef } from 'react';
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { 
   AlertTriangle, 
   ShieldAlert, 
@@ -97,11 +98,17 @@ Acesse o manifesto e assine a petição: https://assinaterrabras.com.br`;
             <a href="#entenda" className="hover:text-terra-yellow transition-colors">O Contexto</a>
             <a href="#solucao" className="hover:text-terra-yellow transition-colors">A Solução</a>
             <a href="#mural" className="hover:text-terra-yellow transition-colors">O Entreguismo</a>
+            <Link to="/sobre" className="hover:text-terra-yellow transition-colors text-terra-yellow">Sobre o Movimento</Link>
             <a href="#mobilize" className="hover:text-terra-yellow transition-colors">Mobilize-se</a>
           </nav>
-          <a href="https://c.org/rHLH5fd6sP" target="_blank" rel="noopener noreferrer" className="bg-terra-yellow hover:bg-white text-terra-dark px-4 py-2 sm:px-6 sm:py-2 font-black text-[10px] sm:text-xs uppercase tracking-tighter transition-colors shadow-lg text-center leading-tight">
-            Assinar <span className="hidden sm:inline">Petição</span>
-          </a>
+          <div className="flex items-center gap-2">
+            <Link to="/sobre" className="flex lg:hidden bg-transparent border border-terra-yellow text-terra-yellow hover:bg-terra-yellow hover:text-terra-dark px-3 py-2 sm:px-6 sm:py-2 font-black text-[10px] sm:text-xs uppercase tracking-tighter transition-colors text-center leading-tight">
+              Dossiê
+            </Link>
+            <a href="https://c.org/rHLH5fd6sP" target="_blank" rel="noopener noreferrer" className="bg-terra-yellow hover:bg-white text-terra-dark px-3 py-2 sm:px-6 sm:py-2 font-black text-[10px] sm:text-xs uppercase tracking-tighter transition-colors shadow-lg text-center leading-tight">
+              Assinar <span className="hidden sm:inline">Petição</span>
+            </a>
+          </div>
         </div>
       </header>
 
@@ -141,6 +148,9 @@ Acesse o manifesto e assine a petição: https://assinaterrabras.com.br`;
               <a href="https://c.org/rHLH5fd6sP" target="_blank" rel="noopener noreferrer" className="bg-terra-yellow hover:bg-white text-terra-dark px-6 py-4 sm:px-8 sm:py-5 font-black text-xs sm:text-sm uppercase tracking-tighter transition-colors flex items-center justify-center gap-3 w-full sm:w-auto shadow-[0_0_20px_rgba(250,204,21,0.3)]">
                 Assinar na Change.org <ArrowRight className="w-5 h-5 shrink-0" />
               </a>
+              <Link to="/sobre" className="border-2 border-terra-yellow text-terra-yellow px-6 py-4 sm:px-8 sm:py-5 font-black text-xs sm:text-sm uppercase tracking-tighter hover:bg-terra-yellow/10 transition-colors flex items-center justify-center gap-2 w-full sm:w-auto">
+                Ler o Dossiê
+              </Link>
             </div>
 
             {/* Scroll Indicator Mobile */}
@@ -578,7 +588,7 @@ Acesse o manifesto e assine a petição: https://assinaterrabras.com.br`;
               Brasil,<br/>
               Nossa Terra é <span className="text-terra-yellow">Rara.</span>
               <br/>
-              Não Vamos <span className="text-terra-yellow">Abrir Mão!</span>
+              Não Podemos <span className="text-terra-yellow">Abrir Mão!</span>
             </h2>
           </div>
 
@@ -611,14 +621,14 @@ Acesse o manifesto e assine a petição: https://assinaterrabras.com.br`;
         <div className="relative z-10 w-full max-w-2xl text-center mt-auto pb-6 pt-12">
           <div className="bg-black border border-white/20 p-6 rounded-lg shadow-[0_0_30px_rgba(0,0,0,0.8)]">
             <h4 className="flex items-center justify-center gap-3 text-xl sm:text-2xl font-black uppercase text-white mb-4 tracking-tight">
-              <span className="text-2xl">📸</span> Tire um Print e Compartilhe <span className="text-2xl">📸</span>
+              <span className="text-2xl">📸</span> Tire Prints e Compartilhe <span className="text-2xl">📸</span>
             </h4>
             <p className="text-xs sm:text-sm font-medium text-gray-300 leading-relaxed mb-4 uppercase tracking-widest">
-              Poste no Instagram, Whatsapp, Twitter, Facebook, marque seus deputados e senadores, e coloque o link: 
+              Poste no Instagram, Whatsapp, Twitter, Facebook, marque seus deputados e senadores, e compartilhe o link: 
             </p>
-            <a href="https://assinaterrabras.com.br" className="inline-block border-2 border-terra-yellow bg-terra-yellow text-terra-dark px-6 py-3 font-black text-sm sm:text-lg uppercase tracking-widest break-all hover:bg-white transition-colors cursor-pointer rounded-sm shadow-xl shadow-terra-yellow/20">
+            <button onClick={handleShare} className="inline-block border-2 border-terra-yellow bg-terra-yellow text-terra-dark px-6 py-3 font-black text-sm sm:text-lg uppercase tracking-widest break-all hover:bg-white transition-colors cursor-pointer rounded-sm shadow-xl shadow-terra-yellow/20">
               assinaterrabras.com.br
-            </a>
+            </button>
           </div>
         </div>
       </footer>
