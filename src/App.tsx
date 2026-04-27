@@ -95,9 +95,9 @@ Acesse o manifesto e assine a petição: https://assinaterrabras.com.br`;
           </div>
           <nav className="hidden lg:flex gap-6 text-sm font-bold tracking-widest uppercase text-white/80">
             <a href="#entenda" className="hover:text-terra-yellow transition-colors">O Contexto</a>
-            <a href="#solucao" className="hover:text-terra-yellow transition-colors">Nossa Resposta</a>
-            <a href="#mural" className="hover:text-terra-yellow transition-colors">Ameaças</a>
-            <a href="#mobilize" className="hover:text-terra-yellow transition-colors">Ação Digital</a>
+            <a href="#solucao" className="hover:text-terra-yellow transition-colors">A Solução</a>
+            <a href="#mural" className="hover:text-terra-yellow transition-colors">O Entreguismo</a>
+            <a href="#mobilize" className="hover:text-terra-yellow transition-colors">Mobilize-se</a>
           </nav>
           <a href="https://c.org/rHLH5fd6sP" target="_blank" rel="noopener noreferrer" className="bg-terra-yellow hover:bg-white text-terra-dark px-4 py-2 sm:px-6 sm:py-2 font-black text-[10px] sm:text-xs uppercase tracking-tighter transition-colors shadow-lg text-center leading-tight">
             Assinar <span className="hidden sm:inline">Petição</span>
@@ -570,11 +570,11 @@ Acesse o manifesto e assine a petição: https://assinaterrabras.com.br`;
         {/* Print Area Border */}
         <div className="absolute inset-4 sm:inset-8 border border-white/10 rounded-sm pointer-events-none"></div>
 
-        <div className="relative z-10 w-full max-w-4xl mx-auto flex flex-col items-center justify-center h-full flex-1 gap-12 sm:gap-16 pt-8">
+        <div className="relative z-10 w-full max-w-4xl mx-auto flex flex-col items-center justify-center h-full flex-1 gap-8 sm:gap-16 pt-8">
           
           {/* Block 1: O Grito de Guerra */}
           <div className="text-center w-full">
-            <h2 className="text-[12vw] sm:text-6xl md:text-8xl font-black italic uppercase tracking-tighter text-white leading-[0.85] drop-shadow-2xl">
+            <h2 className="text-[10.5vw] sm:text-6xl md:text-7xl lg:text-8xl font-black italic uppercase tracking-tighter text-white leading-[0.95] drop-shadow-2xl">
               Brasil,<br/>
               Nossa Terra é <span className="text-terra-yellow">Rara.</span>
               <br/>
@@ -584,24 +584,25 @@ Acesse o manifesto e assine a petição: https://assinaterrabras.com.br`;
 
           {/* Block 2: O Manifesto de 1 Linha */}
           <div className="text-center w-full max-w-2xl px-4">
-            <p className="text-lg sm:text-2xl font-bold uppercase tracking-widest text-gray-300 leading-snug">
+            <p className="text-sm sm:text-xl md:text-2xl font-bold uppercase tracking-wider text-gray-300 leading-relaxed">
               A riqueza do nosso subsolo não é moeda de troca para o capital estrangeiro.
             </p>
           </div>
 
           {/* Block 3: O "Selo" da Exigência */}
-          <div className="relative w-full max-w-3xl flex flex-col items-center justify-center py-10 sm:py-16 my-4 border-y-2 border-terra-yellow/30 bg-terra-yellow/5">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-terra-dark px-4">
-               <ShieldAlert className="w-8 h-8 text-terra-yellow" />
-            </div>
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 bg-terra-dark px-4">
-               <ShieldAlert className="w-8 h-8 text-terra-yellow" />
-            </div>
-            <h3 className="text-3xl sm:text-5xl md:text-6xl font-black italic uppercase tracking-tighter text-terra-yellow leading-none text-center px-4">
-              Exigimos a criação da Terrabrás Já!
+          <div className="relative w-full max-w-3xl flex flex-col items-center justify-center py-8 sm:py-16 my-2 border-y-2 border-terra-yellow/30 bg-terra-yellow/5">
+           
+            <h3 className="text-[7.5vw] sm:text-5xl md:text-6xl font-black italic uppercase tracking-tighter text-terra-yellow leading-[0.95] text-center px-4">
+              Exigimos a criação da<br/>Terrabrás Já!
             </h3>
-            <p className="mt-6 text-sm text-white/50 italic font-medium px-6 text-center max-w-lg mt-8">
+            <p className="mt-4 sm:mt-6 text-xs sm:text-sm text-white/50 italic font-medium px-6 text-center max-w-lg">
               Em defesa da soberania nacional, contra o entreguismo!
+            </p>
+             <p className="mt-4 sm:mt-4 text-xs sm:text-sm text-white/50 italic font-medium px-6 text-center max-w-lg">
+              Não ao novo ciclo de commodities!
+            </p>
+            <p className="mt-4 sm:mt-4 text-xs sm:text-sm text-white/50 italic font-medium px-6 text-center max-w-lg">
+              Nossas terras raras ficam no Brasil!
             </p>
           </div>
         </div>
