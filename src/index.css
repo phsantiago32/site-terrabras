@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-terra-green: #1A3A2A;
+  --color-terra-green-light: #234E39;
+  --color-terra-yellow: #FACC15;
+  --color-terra-copper: #B45309;
+  --color-terra-dark: #0A1A11;
+  --color-terra-gray: #142D1F;
+}
+
+body {
+  background-color: var(--color-terra-dark);
+  color: #E5E7EB;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+.bg-gradient-terra {
+  background-color: var(--color-terra-dark);
+}
+
+.text-gradient-gold {
+  color: var(--color-terra-yellow);
+}
+
+@layer utilities {
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
